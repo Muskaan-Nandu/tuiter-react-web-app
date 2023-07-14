@@ -126,3 +126,9 @@
     float: right;
   }
 
+  .wd-circle {
+    font-size: 5px;
+    padding-bottom: 50px;
+    vertical-align: middle;
+}
+

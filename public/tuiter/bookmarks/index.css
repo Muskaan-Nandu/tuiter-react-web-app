@@ -1,0 +1,175 @@
+.wd-header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.wd-header button{
+    background-color: transparent;
+    border: none;
+}
+
+.wd-header h2 {
+    width: 90%;
+    padding-left: 30px;
+}
+
+.wd-ellipsis {
+    float: inline-end;
+}
+
+.wd-tuit {
+    border: 1px solid #EAEDED;
+    padding: 20px;
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.wd-tuit-profile img{
+    border-radius: 50%;
+    height: 80px;
+    object-fit: cover;
+}
+
+.wd-orient{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.wd-tuit-content {
+    padding-left: 20px;
+    width: 90%;
+}
+
+.wd-tuit-content h3{
+    margin-top: 0px;
+    margin-bottom: -5px;
+}
+
+
+.wd-tuit-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.wd-tuit button{
+    background-color: transparent;
+    border: none;
+}
+
+.wd-canada-flag {
+    background-color: red;
+    width: 30px;
+    height: 13px;
+    margin-top: 6px;
+    margin-left: 8px;
+    position: relative;
+}
+
+.wd-canada-flag-2 {
+    background-color: white;
+    width: 18px;
+    height: 13px;
+    margin-left: 6px;
+    position: absolute;
+}
+
+.wd-canada-flag-2 .fab{
+    color: red;
+    margin-left: 1px;
+}
+
+.wd-blue-tick {
+    margin-top: 5px;
+    margin-left: 8px;
+    color: #1dcaff;
+    position: relative;
+}
+
+/* .wd-white-tick {
+    margin-top: 5px;
+    margin-left: 8px;
+    color: black;
+    position: absolute;
+} */
+
+.wd-tag {
+    color: #666;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.wd-circle {
+    font-size: 5px;
+    padding-bottom: 50px;
+    vertical-align: middle;
+}
+
+.wd-tuit-photo {
+    border: 1px solid #EAEDED;
+    border-radius: 20px;
+    height: 400px;
+}
+
+.wd-tuit-photo hr{
+    margin: 0px;
+    background-color:#EAEDED; 
+    height: 1px; 
+    border: none;
+}
+
+.wd-photo-cover{
+    height: 70%;
+    width: 100%; 
+}
+
+.wd-tuit-photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+}
+
+.wd-image-footer {
+    height: 30%;
+    padding: 10px;
+}
+
+.wd-image-footer p{
+    margin: 3px;
+}
+
+.wd-footer-1 {
+    font-size: 12px;
+    color: #666;
+}
+
+.wd-action-menu{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: #666;
+}
+
+.wd-action {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+}
+
+.wd-action i {
+    margin-top: 18px;
+    margin-right: 10px;
+}
+/* .wd-tuit-item .wd-tuit-subscript {
+    font-size: 12px;
+    color: #666;
+  } */
+
+
+
