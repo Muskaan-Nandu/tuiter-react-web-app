@@ -105,6 +105,8 @@
   .wd-tuit-list {
     list-style-type: none;
     padding: 0;
+    background-color: #FBFCFC;
+    padding: 10px;
   }
   
   .wd-tuit-item {
@@ -130,5 +132,84 @@
     font-size: 5px;
     padding-bottom: 50px;
     vertical-align: middle;
+}
+
+/* new bootsrap */
+
+.wd-root-div {
+  /* padding-top: 3%; */
+  padding: 1%;
+}
+
+.wd-explore-search {
+  position: relative;
+  width: 85%;
+  border-color: lightgray;
+  border-radius: 1px;
+}
+
+.wd-explore-search-icon {
+  position: relative;
+  margin-left: 3%;
+}
+
+.wd-tuit-img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+}
+
+.wd-tuit-content {
+  font-size: 12px;
+  color: #666;
+}
+
+.wd-tuit-subscript {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.wd-explore-follow-sugg-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.wd-explore-btn {
+  padding: 3%;
+  width: 100%;
+  font-size: 13px;
+  /* height: 70%; */
+}
+
+.fa-check-circle{ 
+  margin-left: 2px;
+  font-size: 15px;
+}
+
+.wd-search-bar {
+  padding-left: 2.375rem;
+  width: 80%;
+  background-color: white;
+}
+
+.form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.wd-setting-btn {
+  color: blue;
+  font-size: 25px;
+  padding: 0px;
+  padding-left: 10px;
 }
 
