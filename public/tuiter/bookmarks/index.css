@@ -98,24 +98,28 @@ hr{
     margin-left: 1px;
 }
 
-.wd-blue-tick {
+.wd-blue-tick .fa-certificate {
     margin-top: 5px;
     margin-left: 8px;
-    color: #1dcaff;
     position: relative;
+    color: #1dcaff;
+    position: absolute;
 }
 
-/* .wd-white-tick {
-    margin-top: 5px;
-    margin-left: 8px;
-    color: black;
-    position: absolute;
-} */
+.wd-blue-tick .fa-check {
+    color: white;
+    position: relative;
+    font-size: 10px;
+    margin-left: 13px;
+    margin-top: 10px;
+
+}
+
 
 .wd-tag {
     color: #666;
     margin-top: 5px;
-    margin-left: 5px;
+    margin-left: 15px;
 }
 
 .wd-circle {
