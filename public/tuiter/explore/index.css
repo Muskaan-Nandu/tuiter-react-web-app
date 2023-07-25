@@ -1,0 +1,216 @@
+.wd-search-form {
+    display: flex;
+    align-items: center;
+  }
+
+.wd-search-bar {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 90%;
+    background-color: #EAEDED;
+    border-radius: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .wd-search-bar input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .wd-search-bar i {
+    margin-right: 10px;
+    color: #878585;
+  }
+
+  .wd-setting {
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+    color: #000;
+    cursor: pointer;
+    padding-left: 40px;
+    font-size: 20px;
+  }
+
+  .wd-tabs {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .wd-tab {
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+    width: 20%;
+    color: #666;
+  }
+  
+  .wd-tab label {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .wd-tab .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 78%;
+    height: 3px;
+    background-color: lightskyblue;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .wd-tab input[type="radio"] {
+    display: none;
+  }
+  
+  .wd-tab input[type="radio"]:checked + label {
+    color: black;
+  }
+
+  .wd-tab input[type="radio"]:checked + label .underline {
+    transform: scaleX(1);
+  }
+
+  .wd-explore-img {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .wd-explore-img img{
+    width: 100%;
+    height: auto;
+  }
+
+  .wd-img-header {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color:white;
+  }
+
+  .wd-tuit-list {
+    list-style-type: none;
+    padding: 0;
+    padding: 10px;
+    border: #b8b5b5 solid 0.5px;
+  }
+  
+  .wd-tuit-item {
+    margin-bottom: 5px;
+    padding: 10px;
+  }
+  
+  .wd-tuit-item .wd-tuit-content {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .wd-tuit-item .wd-tuit-subscript {
+    font-size: 12px;
+    color: #666;
+  }
+
+  .wd-ellipsis {
+    float: right;
+  }
+
+  .wd-circle {
+    font-size: 5px;
+    padding-bottom: 50px;
+    vertical-align: middle;
+}
+
+/* new bootsrap */
+
+.wd-root-div {
+  /* padding-top: 3%; */
+  padding: 1%;
+}
+
+.wd-explore-search {
+  position: relative;
+  width: 85%;
+  border-color: lightgray;
+  border-radius: 1px;
+}
+
+.wd-explore-search-icon {
+  position: relative;
+  margin-left: 3%;
+}
+
+.wd-tuit-img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+}
+
+.wd-tuit-subscript-1 {
+  color: #666;
+  /* margin-bottom: 5px; */
+}
+
+.wd-tuit-subscript-2 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.wd-explore-follow-sugg-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.wd-explore-btn {
+  padding: 3%;
+  width: 100%;
+  font-size: 13px;
+  /* height: 70%; */
+}
+
+.fa-check-circle{ 
+  margin-left: 2px;
+  font-size: 15px;
+}
+
+.wd-bs-search-bar {
+  padding-left: 2.375rem;
+  width: 80%;
+  background-color: white;
+}
+
+.form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.wd-setting-btn {
+  color: blue;
+  font-size: 25px;
+  padding: 0px;
+  padding-left: 10px;
+}
+
