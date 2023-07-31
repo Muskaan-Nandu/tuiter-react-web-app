@@ -20,13 +20,16 @@ const TuitStats = ({ tuitInfo }) => {
         <div className="row">
             <div className="col-2"></div>
             <div className="col-2">
-            <button className="btn"><i className="fa fa-comment-o"></i></button> {tuitInfo.replies}
+            <button className="btn"><i className="fa fa-comment-o"></i></button> 
+            <span className="d-none d-lg-inline-block">{tuitInfo.replies}</span>
             </div>
             <div className="col-2">
-            <button className="btn"><i className="fa fa-retweet"></i></button> {tuitInfo.retuits}
+            <button className="btn"><i className="fa fa-retweet"></i></button> 
+            <span className="d-none d-lg-inline-block">{tuitInfo.retuits}</span>
             </div>
-            <div className="col-2">
-            <button className="btn" onClick={handleButtonClick}><i className={`fa fa-heart ${isLiked ? "text-danger" : ""}`}></i></button> {likesCount}
+            <div className="col-2 col-lg-3">
+            <button className="btn" onClick={handleButtonClick}><i className={`fa ${isLiked ? "fa-heart text-danger" : "fa-heart-o"}`}></i></button> 
+            <span className="d-none d-lg-inline-block">{likesCount}</span>
             </div>
             <div className="col-2">
             <button className="btn"><i className="fa fa-upload"></i></button>
