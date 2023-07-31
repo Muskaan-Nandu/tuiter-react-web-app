@@ -1,5 +1,4 @@
 import React from "react";
-import "./index.css";
 
 const WhoToFollowListItem = ({who}) => {
  return(
@@ -9,7 +8,7 @@ const WhoToFollowListItem = ({who}) => {
             <img className="wd-who-to-follow-pic" src={`${who.avatarIcon}`} alt=""/>
         </div>
         <div className="col-7">
-            <div>{who.userName} <i className="fa fa-check-circle"></i></div>
+            <div className="wd-who-to-follow-title">{who.userName} <i className="fa fa-check-circle"></i></div>
             <div>@ {who.handle} </div>
         </div>
         <div className="col-3">

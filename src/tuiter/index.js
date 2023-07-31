@@ -15,6 +15,8 @@ import { configureStore } from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
 import tuitsReducer from "./reducers/tuits-reducer";
 import tuitInfoReducer from "./reducers/tuit-info-reducer";
+import "./index.css";
+
 const store = configureStore(
   {reducer: {who: whoReducer, tuits: tuitsReducer, tuitInfo: tuitInfoReducer}});
 

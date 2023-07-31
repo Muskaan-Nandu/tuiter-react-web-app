@@ -20,7 +20,7 @@ const TuitStats = ({ tuitInfo }) => {
         <div className="row">
             <div className="col-2"></div>
             <div className="col-2">
-            <button className="btn"><i className="fa fa-comment"></i></button> {tuitInfo.replies}
+            <button className="btn"><i className="fa fa-comment-o"></i></button> {tuitInfo.replies}
             </div>
             <div className="col-2">
             <button className="btn"><i className="fa fa-retweet"></i></button> {tuitInfo.retuits}
