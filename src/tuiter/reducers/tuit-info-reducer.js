@@ -3,7 +3,7 @@ import tuitInfo from './tuit-info.json';
 import { updateTuitThunk, createTuitThunk, deleteTuitThunk, findTuitsThunk } from "../services/tuits-thunks";
 
 const currentUser = {
-  "userName": "NASA",
+  "username": "NASA",
   "handle": "@nasa",
   "image": "/images/nasa.png",
 };
@@ -24,10 +24,7 @@ const tuitInfoSlice = createSlice({
     [createTuitThunk.fulfilled]:
       (state, { payload }) => {
         state.loading = false
-        state.tuitInfoArray.unshift({
-          ...payload,
-          ...templateTuit
-        })
+        state.tuitInfoArray.push(payload)
       },
     [updateTuitThunk.fulfilled]:
       (state, { payload }) => {

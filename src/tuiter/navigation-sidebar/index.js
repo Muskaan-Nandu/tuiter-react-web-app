@@ -5,8 +5,8 @@ import { useSelector } from "react-redux";
 const NavigationSidebar = () => {
  const { pathname } = useLocation();
  const [ignore, tuiter, active] = pathname.split("/");
- const links = ["home", "explore", "notifications", "messages", "bookmarks", "lists", "profile",  "more"];
- const icons = ["house", "hash", "bell", "envelope", "bookmark", "card-list", "person", "three-dots"];
+ const links = ["home", "explore", "notifications", "messages", "bookmarks", "lists",  "more"];
+ const icons = ["house", "hash", "bell", "envelope", "bookmark", "card-list", "three-dots"];
  const { currentUser } = useSelector((state) => state.user);
 
  return (
@@ -18,13 +18,18 @@ const NavigationSidebar = () => {
           <span className="d-none d-xl-inline-block">{link}</span>
          </Link>
       )}
+      {currentUser &&
+      <Link className={`list-group-item ${active === "profile" ? "active" : ""}`} to="/tuiter/profile">
+      <span><i className="bi bi-person me-2"/></span> 
+      <span className="d-none d-xl-inline-block">Profile</span>
+    </Link>}
       {!currentUser && 
-      <Link className="list-group-item" to="/tuiter/login">
+      <Link className={`list-group-item ${active === "login" ? "active" : ""}`} to="/tuiter/login">
         <span><i className="bi bi-box-arrow-in-right me-2"/></span> 
         <span className="d-none d-xl-inline-block">Login</span>
       </Link>}
       {!currentUser && 
-       <Link className="list-group-item" to="/tuiter/register">
+       <Link className={`list-group-item ${active === "register" ? "active" : ""}`} to="/tuiter/register">
         <span><i className="bi bi-person-lines-fill me-2"/></span> 
         <span className="d-none d-xl-inline-block">Register</span>
       </Link>}

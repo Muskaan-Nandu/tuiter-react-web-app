@@ -28,7 +28,7 @@ function ProfileScreen() {
  
 
  return ( <div>
-   <h1>Profile Screen</h1>
+   <h1>Profile</h1>
    {profile && (<div>
      <div>
       <label>First Name</label>

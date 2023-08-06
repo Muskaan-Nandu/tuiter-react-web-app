@@ -27,7 +27,7 @@ function LoginScreen() {
  };
  return ( 
     <div>
-    <h1>Login Screen</h1>
+    <h1>Login</h1>
     <div className="mt-2">
      <label>Username</label>
      <input className="form-control" type="text" value={username}
