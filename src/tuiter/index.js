@@ -6,7 +6,7 @@ import ExploreScreen from "./explore-screen";
 import BookmarksScreen from "./bookmarks-screen";
 import NotificationsScreen from "./notifications-screen";
 import MessagesScreen from "./messages-screen";
-import ProfileScreen from "./profile-screen";
+import ProfileScreen from "./user/profile-screen";
 import MoreScreen from "./more-screen";
 import ListsScreen from "./lists-screen";
 import WhoToFollowList from "./who-to-follow-list";
@@ -15,10 +15,19 @@ import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from "react-redux";
 import tuitsReducer from "./reducers/tuits-reducer";
 import tuitInfoReducer from "./reducers/tuit-info-reducer";
+import LoginScreen from "./user/login-screen";
+import RegisterScreen from "./user/register-screen";
+import authReducer from "./reducers/auth-reducer";
 import "./index.css";
 
-const store = configureStore(
-  { reducer: { who: whoReducer, tuits: tuitsReducer, tuitInfo: tuitInfoReducer } });
+const store = configureStore({
+  reducer: {
+    who: whoReducer,
+    tuits: tuitsReducer,
+    tuitInfo: tuitInfoReducer,
+    user: authReducer
+  }
+});
 
 function Tuiter() {
   return (
@@ -39,6 +48,8 @@ function Tuiter() {
               <Route path="/lists" element={<ListsScreen />} />
               <Route path="/profile" element={<ProfileScreen />} />
               <Route path="/more" element={<MoreScreen />} />
+              <Route path="/login" element={<LoginScreen />} />
+              <Route path="/register" element={<RegisterScreen />} />
             </Routes>
           </div>
           <div className="col-3 col-xxl-3 col-xl-3 col-lg-3 d-none d-lg-block">
