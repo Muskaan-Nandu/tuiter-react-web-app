@@ -9,7 +9,8 @@ function ProfileScreen() {
 
  const dispatch = useDispatch();
  const navigate = useNavigate();
- const save = async () => { await dispatch(updateUserThunk(profile)); };
+ const save = async () => { await dispatch(updateUserThunk(profile))
+  alert("Profile updated!"); };
 
  const loadProfile = async () => {
   try {

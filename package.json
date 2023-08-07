@@ -10,6 +10,7 @@
     "axios": "^1.4.0",
     "bootstrap": "^5.3.0",
     "bootstrap-icons": "^1.10.5",
+    "dotenv": "^16.3.1",
     "express-session": "^1.17.3",
     "font-awesome": "^4.7.0",
     "fontawesome": "^5.6.3",
