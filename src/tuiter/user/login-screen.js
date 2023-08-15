@@ -7,6 +7,8 @@ function LoginScreen() {
  const [password, setPassword] = useState("");
  const navigate = useNavigate();
  const dispatch = useDispatch();
+
+ // A6 Done
  const handleLogin = async () => {
   try {
     if(username.length === 0 || password.length === 0)
