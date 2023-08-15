@@ -32,4 +32,4 @@ const TuitsList = () => {
     </div>
   );
 };
-export default TuitsList;
+export default TuitsList; 
