@@ -1,5 +1,4 @@
 import React from "react";
-import "./index.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
 
@@ -19,7 +18,7 @@ const TuitSummaryItem = (
   <li className="list-group-item wd-tuit-list">
    <div className="row">
     <div className="col-9">
-      <div className="wd-tuit-subscript-1">{tuit.topic} . {tuit.time}</div>
+      <div className="wd-tuit-subscript-1">{tuit.topic} <span><i className="fa fa-circle"></i></span> {tuit.time}</div>
       <span className="wd-tuit-subscript-2">{tuit.userName} <i className="fa fa-check-circle"></i></span>
       <div className="wd-tuit-subscript-1">{tuit.title}</div>
     </div>
